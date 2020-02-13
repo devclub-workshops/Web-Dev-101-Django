@@ -5,6 +5,7 @@ We will go on a journey learning basics of web development like HTML, CSS, JavaS
 ---
 ## How to approach the repository:
   - Click [here](https://github.com/devclub-workshops/Web-Dev-101-Django/archive/master.zip) to download the repository.
+  - Un-zip the downloaded file and navigate inside it.
   - Open `index.html` to open the topics you need to see.
   - You can open the files in a text editor to read the source code.
 ---
