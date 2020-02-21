@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods To Use CSS</title>
+    <script src="../assets/js/jquery.js"></script>
+    <style>
+        textarea {
+            resize: none;
+        }
+        input {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Syntax</h1>
+    <p>CSS can alter how an element is rendered on a browser.<br /> You can alter the elements in 3 different ways.</p>
+    <hr />
+    <h4>Direct Elements</h4>
+    <p>
+        If you alter an element directly, every similar element will be rendered in the same way.<br>
+        To do that, you write the element name, eg. <code>h1</code> followed by curly braces <code>{}</code>
+    </p>
+    <p><b>Source Code:</b></p>
+    <textarea id="direct" cols="51" rows="3" disabled></textarea>
+    <hr />
+
+    <h4>Class</h4>
+    <p>
+        When you want to modify a particular unique element on the page, you can use class to avoid styling all other similar elements.<br>
+        You can have multiple elements having same class. Classes can make styling of a webpage modular.
+    </p>
+    <p><b>Source Code:</b></p>
+    <textarea id="class" cols="51" rows="3" disabled></textarea>
+    <hr />
+
+    <h4>ID</h4>
+    <p>
+        IDs are similar to classes but only a particular ID can be only used once in a page.
+    </p>
+    <p><b>Source Code:</b></p>
+    <textarea id="id" cols="51" rows="3" disabled></textarea>
+    <script>
+        $('#direct').val("element-name {\n  ...\n}");
+        $('#class').val(".class-name {\n  ...\n}");
+        $('#id').val("#id-name {\n  ...\n}");
+    </script>
+</body>
+</html>

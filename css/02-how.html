@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods To Use CSS</title>
+    <script src="../assets/js/jquery.js"></script>
+    <style>
+        textarea {
+            resize: none;
+        }
+        input {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Methods To Use CSS</h1>
+    <p>CSS decides how a HTML element is rendered on your screen. You can link CSS Rules to HTML page in three different manners.<br /> The most common way is to use external CSS that allows the project source code to remain clean and allow multiple people to collaborate.</p>
+    <hr />
+    <h4>Inline CSS</h4>
+    <p>
+        When you apply style attribute directly to a HTML element, it's known as inline css.<br>
+        The stlye applied is unique to that particular element and won't be applied other similar elements.
+    </p>
+    <p><b>Preview:</b></p>
+    <div style="background-color: red;">Inline CSS</div>
+    <p><b>Source Code:</b></p>
+    <input type="text" size="51" id="inline" disabled>
+    <hr />
+
+    <h4>Internal CSS</h4>
+    <p>
+        When you want to apply style to a single page you can use internal CSS.<br>
+        To declare internal CSS, you create style tag in the head of the HTML page. 
+    </p>
+    <p><b>Preview:</b></p>
+    <div class="red">Internal CSS</div>
+    <p><b>Source Code:</b></p>
+    <textarea id="internal" cols="51" rows="10" disabled></textarea>
+    <hr />
+
+    <h4>External CSS</h4>
+    <p>
+        An external style sheet is used to define the style for many HTML pages.<br>
+        With an external style sheet, you can change the look of an entire web site, by changing one file!<br>
+        To do this you create a file with .css extension and write all your css code in it and link it to the HTML page you want.
+    </p>
+    <p><b>Preview:</b></p>
+    <div class="red">External CSS</div>
+    <p><b>Source Code:</b><br>File: style.css</p>
+    <textarea id="external" cols="51" rows="3" disabled></textarea>
+    <p>File: index.html</p>
+    <textarea id="link" cols="51" rows="6" disabled></textarea>
+    <script>
+        $('#inline').val("<div style=\"background-color: red;\">Inline CSS</div>");
+        $('#internal').val("<head>\n    <style>\n       .red {\n           background-color: red;\n        }\n   </style>\n</head>\n<body>\n   <div class=\"red\">Internal CSS</div>\n</body>");
+        $('#external').val(".red {\n    background-color:red;\n}");
+        $('#link').val("<head>\n    <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n   <div class=\"red\">Internal CSS</div>\n</body>");
+    </script>
+</body>
+</html>
